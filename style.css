@@ -1,0 +1,125 @@
+/* Reseta margens e paddings básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #050505;
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Estrutura principal da tabela */
+.tabela-container {
+  width: 100%;
+  max-width: 480px;
+  background-color: #000000;
+  border: 1px solid #333333;
+  box-shadow: 0 0 25px rgba(255, 102, 0, 0.25);
+}
+
+/* Cabeçalho com o efeito de fogo/chamas no fundo */
+.header {
+  position: relative;
+  padding: 35px 20px 25px 20px;
+  text-align: left;
+  background: radial-gradient(ellipse at top, #ffa500 0%, #ff3300 35%, #000000 85%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.autor {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  font-size: 0.75rem;
+  color: #cccccc;
+  letter-spacing: 1px;
+}
+
+.titulo {
+  font-size: 2.1rem;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px #000000;
+}
+
+/* Linhas e Colunas */
+.colunas-header {
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.coluna-titulo {
+  flex: 1;
+  padding: 12px;
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.coluna-titulo:first-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.linha {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  min-height: 85px;
+}
+
+.linha:last-child {
+  border-bottom: none;
+}
+
+/* Coluna de Peça (Imagem + Nome) */
+.coluna-peca {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+  height: 100%;
+}
+
+/* Moldura Oval/Pílula para as fotos das peças */
+.thumb-img {
+  width: 75px;
+  height: 48px;
+  border-radius: 24px;
+  object-fit: cover;
+  border: 1px solid #555555;
+  background-color: #222222;
+  flex-shrink: 0;
+}
+
+.coluna-peca span {
+  font-size: 0.8rem;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: 1px;
+}
+
+/* Coluna de Preço */
+.coluna-preco {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-align: center;
+}
