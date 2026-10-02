@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>42 Carros e Peças</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Fonte futurista/pixelada estilo gamer (Orbitron) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
 
+  <div class="tabela-container">
+    
+    <!-- Cabeçalho -->
+    <header class="header">
+      <span class="autor">LEONARDO N°15</span>
+      <h1 class="titulo">42<br>CARROS E PEÇAS</h1>
+    </header>
+
+    <!-- Tabela de Preços -->
+    <main class="conteudo-tabela">
+      <div class="colunas-header">
+        <div class="coluna-titulo">PEÇAS</div>
+        <div class="coluna-titulo">PREÇOS</div>
+      </div>
+
+      <!-- Item 1: Bancos -->
+      <div class="linha">
+        <div class="coluna-peca">
+          <img src="bancos.jpg" alt="Bancos" class="thumb-img">
+          <span>BANCOS</span>
+        </div>
+        <div class="coluna-preco">400-1500 R$</div>
+      </div>
+
+      <!-- Item 2: Parachoques -->
+      <div class="linha">
+        <div class="coluna-peca">
+          <img src="parachoques.jpg" alt="Parachoques" class="thumb-img">
+          <span>PARACHOQUES</span>
+        </div>
+        <div class="coluna-preco">350-1.000 R$</div>
+      </div>
+
+      <!-- Item 3: Kit Suspensão e Rodas -->
+      <div class="linha">
+        <div class="coluna-peca">
+          <img src="suspensao.jpg" alt="Kit Suspensão e Rodas" class="thumb-img">
+          <span>KIT SUSPENSÃO E RODAS</span>
+        </div>
+        <div class="coluna-preco">500-1.700 R$</div>
+      </div>
+
+      <!-- Item 4: Portas -->
+      <div class="linha">
+        <div class="coluna-peca">
+          <img src="portas.jpg" alt="Portas" class="thumb-img">
+          <span>PORTAS</span>
+        </div>
+        <div class="coluna-preco">600-1.200 R$</div>
+      </div>
+
+      <!-- Item 5: Motores Usados Revisados -->
+      <div class="linha">
+        <div class="coluna-peca">
+          <img src="motores.jpg" alt="Motores Usados Revisados" class="thumb-img">
+          <span>MOTORES USADOS REVISADOS</span>
+        </div>
+        <div class="coluna-preco">5.000-20.000 R$</div>
+      </div>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
